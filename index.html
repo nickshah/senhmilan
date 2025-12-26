@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framed Image Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a Frame and Download</h1>
+        
+        <input type="file" id="imageLoader" accept="image/*">
+        <label for="imageLoader" class="upload-label">Choose an image</label>
+        
+        <div class="canvas-container">
+            <canvas id="imageCanvas"></canvas>
+            <!-- A CSS-only overlay for visual effect before final rendering -->
+            <div class="css-frame-overlay"></div> 
+        </div>
+
+        <button id="downloadButton" style="display: none;">Download Framed Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
