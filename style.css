@@ -49,7 +49,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 20px solid rgba(100, 100, 100, 0.5); /* A semi-transparent grey frame */
+    border: 1px solid rgba(100, 100, 100, 0.5); /* A semi-transparent grey frame */
     pointer-events: none; /* Allows clicks to pass through to the canvas/container */
     box-sizing: border-box;
 }
