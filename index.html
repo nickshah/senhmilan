@@ -8,17 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Add a Frame and Download</h1>
-        
         <input type="file" id="imageLoader" accept="image/*">
         <label for="imageLoader" class="upload-label">Choose an image</label>
-        <br/><input type="text" id="nameLoader" placeholder="Add Your Name" onchange="drawText()">
+        <br/><input type="text" id="nameLoader" placeholder="Add Your Name" onchange="">
+        <button id="moveButton" onclick="drawText()">Update Name</button>
         
         <div class="canvas-container">
             <canvas id="imageCanvas"></canvas>
             <!-- A CSS-only overlay for visual effect before final rendering -->
             <div class="css-frame-overlay"></div> 
         </div>
+        <P class="moveButton" style="display: none;">Set Photo</P>
+         <button id="moveButton" class="moveButton" style="display: none;" onclick="moveImageLeft()">Move left</button>
+        <button id="moveButton" class="moveButton" style="display: none;" onclick="moveImageRight()">Move Right</button>
+        <button id="moveButton" class="moveButton" style="display: none;" onclick="moveImageUp()">Move Up</button>
+        <button id="moveButton" class="moveButton" style="display: none;" onclick="moveImageDown()">Move Down</button>
 
         <button id="downloadButton" style="display: none;">Download Framed Image</button>
     </div>

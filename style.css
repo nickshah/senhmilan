@@ -63,3 +63,19 @@ body {
     cursor: pointer;
     margin-top: 15px;
 }
+
+#moveButton {
+    padding: 10px 20px;
+    background-color: #c0ece1;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+#nameLoader {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
